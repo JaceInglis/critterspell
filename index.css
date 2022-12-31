@@ -6,21 +6,27 @@
     font-weight: 100;
 }
 
-
-
 .logo {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+    margin: 0 auto
 }
 
 .message {
-    display: flex;
-    justify-content: center;
-}
-
-p {
-    position: relative;
-    top: 2.5rem;
     text-align: center;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 1284px) {
+    .logo {
+        width: 375px;
+        height: 165px;
+    }
+    .message {
+        font-size: 10px;
+    }
+  }
